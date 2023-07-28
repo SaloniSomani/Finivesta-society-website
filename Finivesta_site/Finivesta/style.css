@@ -1,0 +1,150 @@
+.BookImage {
+  margin: 0 !important;
+  padding: none;
+  width: 100%;
+  height: 25vw !important;
+}
+
+body {
+  margin: 0;
+}
+
+.TitleImage {
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.headingBookreview {
+  font-size: 5vw;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header img {
+  filter: brightness(0.4);
+}
+/*
+  .grid { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+    }
+  .grid > article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  }
+  .grid > article img {
+    max-width: 100%;
+  }
+  .text {
+    padding: 0 20px 20px;
+  }
+  .text > button {
+    background: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    }*/
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+a.read_more {
+  display: inline;
+  margin-left: 5px;
+  padding: 1px;
+  color: #23527c;
+  box-sizing: border-box;
+}
+.cards {
+  margin: 20px auto;
+  max-width: 1100px;
+  display: grid;
+  height: 75%;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  gap: 20px;
+}
+
+@media (min-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  height: 400px;
+  width: 100%; /* Add this line to set the width to 100% */
+  box-sizing: border-box;
+  box-shadow: 0 0 3px rgb(93, 87, 87);
+}
+.cardb {
+  height: 520px;
+  width: 100%; /* Add this line to set the width to 100% */
+  box-sizing: border-box;
+  box-shadow: 0 0 3px rgb(93, 87, 87);
+}
+
+.card_image {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  display: block;
+  max-height: 70%;
+}
+.card_imageb {
+  width: 100%;
+  height: 470px;
+  overflow: hidden;
+  display: block;
+  max-height: 70%;
+}
+
+.card_content {
+  line-height: 1.5;
+  font-size: 0.9em;
+  padding: 10px;
+  background-color: #fafafa;
+}
+
+.card_content > p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.card_content > h3 {
+  margin-top: 0px;
+  margin-bottom: 2px;
+  text-align: center;
+  color: rgba(46, 75, 136);
+  text-decoration: underline;
+}
+
+.card_info {
+  float: right;
+  background-color: #fafafa;
+  padding: 15px;
+  display: flex;
+  font-size: 0.8em;
+}
+
+.card_link {
+  color: #32524b;
+  text-decoration: none;
+}
+
+.card_link:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
