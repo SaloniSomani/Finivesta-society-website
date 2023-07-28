@@ -1,0 +1,140 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesoc.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Events</title>
+  </head>
+  <header>
+    <nav>
+      <img
+        class="img_logo"
+        src="https://pbs.twimg.com/profile_images/1571010540935467008/olL0XARm_400x400.jpg"
+        alt="align box"
+        align="LEFT"
+      />
+      <ul class="items me-auto">
+        <li><a href="/AU_website.html">About Us</a></li>
+        <li><a href="/indexsoc.html">Events</a></li>
+        <li><a href="/publica.html">Publications</a></li>
+        <li><a href="/begin.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+      body {
+        font-family: "Quicksand", sans-serif;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      li {
+        list-style-type: none;
+      }
+
+      header {
+        display: flex;
+        justify-content: center;
+        z-index: 100;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        /* padding: 0px 10%; */
+        background-color: #e1e3e6;
+      }
+
+      nav ul {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+      }
+
+      nav ul li {
+        font-weight: bold;
+        float: right;
+        margin-left: 15px;
+        margin-right: 5px;
+      }
+
+      nav ul li a {
+        font-weight: bolder;
+        float: right;
+        color: #009a3e;
+        display: block;
+        padding: 20px 20px;
+        transition: all 300ms;
+      }
+
+      nav ul li a:hover {
+        color: #009a3e;
+        box-shadow: 3px 5px 7px 0px #0000000d;
+      }
+
+      .cta {
+        background-color: #009a3e;
+        color: #fff;
+      }
+
+      .cta:hover {
+        background-color: #009a3e;
+        color: #fff;
+      }
+
+      .img_logo {
+        height: 90px;
+        width: 160px;
+        object-fit: contain;
+        background: black;
+      }
+    </style>
+  </header>
+
+  <body>
+    <div class="myDiv">
+      <p style="font-weight: 600">Events</p>
+      <p class="p1">An investment in knowledge pays the best interest</p>
+    </div>
+
+    <h2>Take a look at our events</h2>
+
+    <div class="slideshow">
+      <img class="mySlides" src="img/img1.png" style="width: 50%" />
+      <img class="mySlides" src="img/img6.png" style="width: 50%" />
+      <img class="mySlides" src="img/img4.png" style="width: 50%" />
+      <img class="mySlides" src="img/img5.png" style="width: 50%" />
+      <img class="mySlides" src="img/img7.png" style="width: 50%" />
+    </div>
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+  </body>
+</html>

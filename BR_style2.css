@@ -1,0 +1,69 @@
+.TitleImage {
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+
+.BookImage {
+    margin: 0 !important;
+    padding: none;
+    width: 100%;
+    height: 15vw !important;
+}
+
+.headingBook{
+    font-size: 5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    margin: 2px;
+}
+
+.bookName{
+    font-size: 100%;
+    margin-bottom: 2px;
+}
+
+.author{
+    margin-top: 2px;
+    font-size: 2rem;
+
+}
+
+.coverPhoto{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    height: 80vh !important;
+}
+
+.memberName{
+    text-align: center;
+    margin:none; 
+    text-decoration: underline;
+    margin-top: none;
+
+}
+
+body{
+    margin:0;
+}
+
+.content{
+    width: 90%;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.review{
+    margin: 20px 40px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.psy{
+    border:1px solid #555;
+}
